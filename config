@@ -50,6 +50,11 @@ font xft:Droid Sans Mono, FontAwesome 8
 # ventanas sin borde
 new_window normal 0 px
 
+# Imprimir pantalla
+bindsym Print exec scrot -e 'mv $f \$HOME/Imágenes/ && viewnior \$HOME/Imágenes/$f'
+# scrot & gimp - select window or rectangle
+bindsym $mod+Print exec scrot -u -e 'mv $f \$HOME/Imágenes/ && viewnior \$HOME/Imágenes/$f'
+
 # wallpaper
 exec --no-startup-id feh --bg-scale /home/jesus/Imágenes/wallpaper.jpg
 
